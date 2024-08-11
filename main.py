@@ -36,7 +36,7 @@ class LinkList:
         self.length -= 1
         if self.length == 0:
             self.head = self.tail = None
-        return f'Removing: {temp.value}'
+        return temp
     
     def pop_first(self):
         if self.length == 0:
@@ -134,14 +134,9 @@ class LinkList:
             before = temp
             temp = after
 
-my_linklist = LinkList(0)
-my_linklist.append(1)
-my_linklist.append(2)
-my_linklist.append(3)
-my_linklist.append(4)
-print("Original List:")
-my_linklist.print_list()
 
-my_linklist.reverse()
-print("Reversed List:")
-my_linklist.print_list()
+
+
+
+
+
